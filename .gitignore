@@ -9,6 +9,8 @@ eggs
 parts
 bin
 var
+lib
+lib64
 sdist
 develop-eggs
 .installed.cfg
