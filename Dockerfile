@@ -1,9 +1,9 @@
 FROM ubuntu:latest
-MAINTAINER Todd Burgess "tburgess57@gmail.com"
+MAINTAINER Tim Potter "tim@timpotter.name"
 RUN apt-get update -y
-RUN apt-get install -y python-pip python-dev build-essential
+RUN apt-get install -y python-pip python2.7-dev build-essential
 COPY . /app
 WORKDIR /app
-RUN pip install -r requirements.txt
-ENTRYPOINT ["python"]
+RUN pip2 install -r requirements.txt
+ENTRYPOINT ["python2"]
 CMD ["main.py"]
